@@ -23,7 +23,7 @@
 
       input{
         width: 96%;
-        height: 30px;
+        height: 20px;
         margin: 5px;
         border-radius: 15px;
         border:2px solid rgb(0, 110, 255);
@@ -33,69 +33,66 @@
         text-indent: 40px;
       }
 
-      .menu{
+      section{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
       }
-
-      section {
-        padding: 0px;
+      
+      li{
+        display: block;
         width: 19.5%;
-      }
-
-      li {
-        list-style-type: none;
-        padding: 1px;
         margin-right: 1px;
         margin-bottom: 1px;
-      }
-
-      #topLeft {
-        border-top-left-radius: 10px;
-      }
-      #topRight {
-        border-top-right-radius: 10px;
-      }
-      #bottomLeft {
-        border-bottom-left-radius: 10px;
-      }
-      #bottomRight {
-        border-bottom-right-radius: 10px;
-      }
-
-     .col1 li{
-        background-color:  rgb(255, 245, 241);
-      }
-     .col1 li:nth-child(1){
-        background-image: linear-gradient(to bottom, rgb(250, 90, 86) 0%, rgb(251, 134, 80) 90%);
-      }
-     .col2 li{
-        background-color:  rgb(239, 249, 255);
-      }
-     .col2 li:nth-child(1){
-        background-image: linear-gradient(to bottom, rgb(60, 131, 250) 0%, rgb(80, 178, 250) 90%);
-      }
-     .col3 li{
-        background-color:  rgb(242, 245, 255);
-      }
-     .col3 li:nth-child(1){
-        background-image: linear-gradient(to bottom, rgb(94, 128, 255) 0%, rgb(102, 164, 255) 90%);
-      }
-     .col4 li{
-        background-color:  rgb(236, 252, 248);
-      }
-     .col4 li:nth-child(1){
-        background-image: linear-gradient(to bottom, rgb(48, 196, 182) 0%, rgb(82, 217, 179) 90%);
-      }
-      .col5 li{
-        background-color:  rgb(255, 249, 242);
-      }
-     .col5 li:nth-child(1){
-        background-image: linear-gradient(to bottom, rgb(255, 137, 57) 0%, rgb(255, 168, 70) 90%);
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
 
       li:nth-child(1){
-          color:white;
+        background-image: linear-gradient(to bottom, rgb(250, 90, 86) 0%, rgb(251, 134, 80) 90%);
+      }
+      li:nth-child(5n+1){
+        background-color:  rgb(255, 245, 241);
+      }
+      li:nth-child(2){
+        background-image: linear-gradient(to bottom, rgb(60, 131, 250) 0%, rgb(80, 178, 250) 90%);
+      }
+      li:nth-child(5n+2){
+        background-color:  rgb(239, 249, 255);
+      }
+      li:nth-child(3){
+        background-image: linear-gradient(to bottom, rgb(94, 128, 255) 0%, rgb(102, 164, 255) 90%);
+      }
+      li:nth-child(5n+3){
+        background-color:  rgb(242, 245, 255);
+      }
+      li:nth-child(4){
+        background-image: linear-gradient(to bottom, rgb(48, 196, 182) 0%, rgb(82, 217, 179) 90%);
+      }
+      li:nth-child(5n+4){
+        background-color:  rgb(236, 252, 248);
+      }
+      li:nth-child(5){
+        background-image: linear-gradient(to bottom, rgb(255, 137, 57) 0%, rgb(255, 168, 70) 90%);
+      }
+      li:nth-child(5n+5){
+        background-color:  rgb(255, 249, 242);
+      }
+      li:nth-child(1){
+        border-top-left-radius: 10px;
+      }
+      li:nth-child(5){
+        border-top-right-radius: 10px;
+      }
+      li:nth-last-child(5){
+        border-bottom-left-radius: 10px;
+      }
+      li:nth-last-child(1){
+        border-bottom-right-radius: 10px;
+      }
+
+      .col1{
+        color: white;
       }
     </style>
   </head>
@@ -105,46 +102,42 @@
     </div>
 
     <div class="menu">
-    <section class="col1">
-      <li id="topLeft">
-        <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
-        <p>酒店</p>
-      </li>
+      <section>
+        <li class="col1"> 
+          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
+          <p>酒店</p>
+        </li>
 
-      <li>
-        <img src="./source/icons8-house-50.png" width= 30px height= 30px />
-        <p>民宿/客栈</p>
-      </li>
-
-      <li id="bottomLeft">
-        <img src="./source/icons8-house-50.png" width= 30px height= 30px />
-        <p>特价/爆款</p>
-      </li>
-    </section>
-
-    <section class="col2">
-        <li>
+        <li class="col1">
           <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
           <p>机票</p>
         </li>
-  
+
+        <li class="col1">
+          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
+          <p>火车票</p>
+        </li>
+
+        <li class="col1">
+          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
+          <p>旅游</p>
+        </li class="col1">
+
+        <li class="col1">
+          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
+          <p>攻略/景点</p>
+        </li>
+
+        <li>
+          <img src="./source/icons8-house-50.png" width= 30px height= 30px />
+          <p>民宿/客栈</p>
+        </li>
+
         <li>
           <img src="./source/icons8-house-50.png" width= 30px height= 30px />
           <p>接送机/包车</p>
         </li>
 
-        <li>
-          <img src="./source/icons8-house-50.png" width= 30px height= 30px />
-          <p>航班助手</p>
-        </li>
-    </section>
-
-    <section class="col3">
-        <li>
-          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
-          <p>火车票</p>
-        </li>
-  
         <li>
           <img src="./source/icons8-house-50.png" width= 30px height= 30px /> 
           <p>汽车/船票</p>
@@ -152,43 +145,39 @@
 
         <li>
           <img src="./source/icons8-house-50.png" width= 30px height= 30px />
-          <p>租车</p>
+          <p>门票/活动</p>
         </li>
-    </section>
 
-    <section class="col4">
-        <li>
-          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
-          <p>旅游</p>
-        </li>
-  
         <li>
           <img src="./source/icons8-house-50.png" width= 30px height= 30px />
-          <p>门票/活动</p>
+          <p>美食</p>
+        </li>
+
+        <li>
+          <img src="./source/icons8-house-50.png" width= 30px height= 30px />
+          <p>特价/爆款</p>
+        </li>
+
+        <li>
+          <img src="./source/icons8-house-50.png" width= 30px height= 30px />
+          <p>航班助手</p>
+        </li>
+
+        <li>
+          <img src="./source/icons8-house-50.png" width= 30px height= 30px />
+          <p>租车</p>
         </li>
 
         <li>
           <img src="./source/icons8-house-50.png" width= 30px height= 30px />
           <p>周边游</p>
         </li>
-    </section>
 
-    <section class="col5">
-        <li id="topRight">
-          <img src="./source/icons8-hotel-64.png" width= 30px height= 30px />
-          <p>攻略/景点</p>
-        </li>
-  
         <li>
-          <img src="./source/icons8-house-50.png" width= 30px height= 30px />
-          <p>美食</p>
-        </li>
-
-        <li id="bottomRight">
           <img src="./source/icons8-house-50.png" width= 30px height= 30px />
           <p>购物/免税</p>
         </li>
-    </section>
+      </section>
     </div>
     icon by <a target="_blank" href="https://icons8.com">Icons8</a>
   </body>
